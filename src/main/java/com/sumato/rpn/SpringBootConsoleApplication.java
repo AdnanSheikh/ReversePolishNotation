@@ -11,20 +11,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  */
 @Slf4j
 @SpringBootApplication
-public class SpringBootConsoleApplication implements CommandLineRunner {
-
-    @Autowired
-    private RPNProcessor processor;
+public class SpringBootConsoleApplication{
 
     public static void main(String[] args) throws Exception {
         log.info("Starting the application...");
         SpringApplication.run(SpringBootConsoleApplication.class, args);
         log.info("Application finished...");
-    }
-
-    @Override
-    public void run(String... args) throws Exception {
-        log.info("EXECUTING: command line runner");
-        processor.process();
     }
 }

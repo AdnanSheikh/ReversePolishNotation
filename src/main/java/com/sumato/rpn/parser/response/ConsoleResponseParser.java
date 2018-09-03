@@ -10,7 +10,6 @@ import org.springframework.stereotype.Repository;
 public class ConsoleResponseParser implements IResponseParser {
     @Override
     public void writeResponse(Response response) {
-        System.out.println("################ Output ################");
-        System.out.printf("%.2f\n",response.getOutput());
+        System.out.printf("Output: %.2f",response.getOutput());
     }
 }

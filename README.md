@@ -15,6 +15,6 @@ Implement RPN (Reverse Polish Notation) expressions parser
  - Maven 
  - Lombok
 
-<h2>Project Execution</h2>
+<h2>Test Application</h2>
 
- - mvn exec:java
+ - mvn test
